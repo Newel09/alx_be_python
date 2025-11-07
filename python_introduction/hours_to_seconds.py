@@ -9,8 +9,9 @@ Task Description:
 # Defining variables
 one_hour = 60
 one_minute = 60
+hours = 2
 
 # Converting 2 hours into seconds
-two_hours = one_hour * one_minute * 2
+two_hours = one_hour * one_minute * hours
 
 print(f"2 hour(s) is {two_hours} seconds.")
