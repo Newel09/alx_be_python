@@ -7,13 +7,13 @@ number2 = 5
 # Perform addition on number1 and number2
 sum_result = number1 + number2
 
-#Printing the result
+# Printing the result
 print(f"Addition of {number1} and {number2} is {sum_result}")
 
 # Perform substraction on number1 and number2
 difference_result = number1 - number2
 
-#Printing the result
+# Printing the result
 print(f"Substraction of {number1} and {number2} is {difference_result}")
 
 # Perform multiplication on number1 and number2
