@@ -1,8 +1,8 @@
+#!/usr/bin/env python3
 """
 For this task, you are to write a Python script that calculates the area of a rectangle. The area of a rectangle is found by multiplying its length by its width.
 
 Instructions:
-
 1. Create a file named rectangle_area.py.
 2. Define two variables in this file:
 3. Length with a value representing the length of the rectangle.
