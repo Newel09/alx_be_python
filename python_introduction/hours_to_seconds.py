@@ -10,8 +10,9 @@ Task Description:
 one_hour = 60
 one_minute = 60
 hours = 2
+seconds = hours 
 
 # Converting 2 hours into seconds
-two_hours = one_hour * one_minute * hours
+seconds = hours * 3600
 
-print(f"2 hour(s) is {two_hours} seconds.")
+print(f"2 hour(s) is {seconds} seconds.")
