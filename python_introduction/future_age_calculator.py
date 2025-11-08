@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """
 1. Ask user to input their age
-2. Use their age to calculate their current age
-3. Assume the current year is 2023
-4. Calculate their age by the year 2050
-5. Print out the result in a human-readable format: In 2050, you will be [age] years old
+2. Create a file named future_age_calculator.py.
+3. Prompt the user to input their current age with the question: “How old are you? ”.
+4. Use their age to calculate their current age
+5. Assume the current year is 2023
+6. Calculate their age by the year 2050
+7. Print out the result in a human-readable format: In 2050, you will be [age] years old
 
 """
 """
@@ -14,7 +16,7 @@
 """
 
 # Define variables 
-age = int(input("Please, what is your age?: "))
+age = int(input("How old are you? "))
 
 # Calculate new age
 new_age = age + 27
