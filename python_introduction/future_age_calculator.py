@@ -16,6 +16,7 @@
 """
 
 # Define variables 
+# Assume the current year is 2023
 age = int(input("How old are you? "))
 
 # Calculate new age
