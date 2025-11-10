@@ -29,20 +29,20 @@ where;
  """
 # finance_calculator.py
 
-# Ask user to enter their monthly income (float)
+# Ask user to enter their monthly income, ensuring the use of float data type
 monthly_income = float(input("Enter your monthly income: "))
 
-# Ask user to enter their total monthly expenses (float)
-total_monthly_expenses = float(input("Enter your total monthly expenses: "))
+# Ask user to enter their total monthly expenses, ensuring the use of float data type
+monthly_expenses = float(input("Enter your total monthly expenses: "))
 
 # Calculate monthly savings
-monthly_savings = monthly_income - total_monthly_expenses
+monthly_savings = monthly_income - monthly_expenses
 
-# Projected savings after one year at a simple 5% annual interest
+# Projected savings after one year at a simple 5% annual interest rate
 interest_rate = 0.05
 annual_savings = monthly_savings * 12
 projected_savings = annual_savings * (1 + interest_rate)
 
-# Print results (formatted to two decimals)
+# Print the results, rounding to two decimal places
 print(f"Your monthly savings are ${monthly_savings:.2f}.")
 print(f"Projected savings after one year, with interest, is: ${projected_savings:.2f}.")
