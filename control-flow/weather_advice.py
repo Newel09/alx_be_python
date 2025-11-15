@@ -19,7 +19,7 @@ Print the clothing recommendation based on the weather condition provided by the
 # define possible inputs.
 #weather = ("sunny", "rainy", "cold")
 while True:
-    user_input = str(input("What is the weather today? (sunny/rainy/cold): ").lower()) # .lower() to convert to any case.
+    user_input = str(input("What's the weather like today? \n(sunny/rainy/cold): ").lower()) # .lower() to convert to any case.
 
     if user_input == "sunny":
         print(f"Wear a t-shirt and sunglasses.") # Print this is the weather is sunny.
