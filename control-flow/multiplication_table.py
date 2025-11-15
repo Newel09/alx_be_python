@@ -17,13 +17,13 @@ Y is the current number in the loop, and Z is the product.
 start = 1
 end = 10
 
-range = range(start, end+1)
+range = range(0, 10+1)
 
 number = int(input("Enter a number to see its multiplication table:"))
 
 #print(f"The multiples of {number} from {start} to {end}:")
 
-print(f"The multiples of {number} from {start, end}:")
+print(f"The multiples of {number} from {0, 10}:")
 
 for i in range:
    result = number * i
