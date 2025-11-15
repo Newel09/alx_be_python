@@ -17,7 +17,7 @@ Y is the current number in the loop, and Z is the product.
 start = 1
 end = 10
 
-range = range(0, 10+1)
+range = range(0, 11)
 
 number = int(input("Enter a number to see its multiplication table:"))
 
