@@ -22,7 +22,7 @@ while True:
 
  operator = input("Choose the operation (+, -, *, /):")
 
- match operator:
+ match operator :
     case _ if operator == "+":
      result = num1 + num2
 
