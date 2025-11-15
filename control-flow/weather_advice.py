@@ -19,18 +19,17 @@ Print the clothing recommendation based on the weather condition provided by the
 # define possible inputs.
 #weather = ("sunny", "rainy", "cold")
 while True:
-    Weather = input("What's the weather like today? (sunny/rainy/cold): ").lower() # .lower() to convert to any case.
+    weather = input("What is the weather like today? (sunny/rainy/cold): ").lower()  # Store the input in 'weather'
 
-    if Weather == "sunny":
-      print(f"Wear a t-shirt and sunglasses.") # Print this is the weather is sunny.
-
-    elif Weather == "rainy":
-      print(f"Don't forget your umbrella and a raincoat.")
-
-    elif Weather == "cold":
-      print(f"Make sure to wear a warm coat and a scarf.")
-
+    if weather == "sunny":
+        print("Wear a t-shirt and sunglasses.")  # Print this if the weather is sunny
+        break  # Exit the loop after printing the recommendation
+    elif weather == "rainy":
+        print("Don't forget your umbrella and a raincoat.")
+        break
+    elif weather == "cold":
+        print("Make sure to wear a warm coat and a scarf.")
+        break
     else:
-      print(f"Sorry, I don't have recommendations for this weather.")
-      break
-  
+        print("Sorry, I don't have recommendations for this weather.")
+        continue  # Keep asking for a valid input
