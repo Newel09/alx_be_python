@@ -23,14 +23,14 @@ while True:
 
     if Weather == "sunny":
       print(f"Wear a t-shirt and sunglasses.") # Print this is the weather is sunny.
-      break
+
     elif Weather == "rainy":
       print(f"Don't forget your umbrella and a raincoat.")
-      break
+
     elif Weather == "cold":
       print(f"Make sure to wear a warm coat and a scarf.")
-      break
+
     else:
       print(f"Sorry, I don't have recommendations for this weather.")
-      continue
+      break
   
