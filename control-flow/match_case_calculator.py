@@ -20,19 +20,19 @@ while True:
  num1 = float(input("Enter the first number:"))
  num2 = float(input("Enter the second number:"))
 
- operator = input("Choose the operation (+, -, *, /):")
+ operation = input("Choose the operation (+, -, *, /):")
 
- match operator :
-    case _ if operator == "+":
+ match operation :
+    case _ if operation == "+":
      result = num1 + num2
 
-    case _ if operator == "-":
+    case _ if operation == "-":
      result = num1 - num2
 
-    case _ if operator == "*":
+    case _ if operation == "*":
      result = num1 * num2
      
-    case _ if operator == "/":
+    case _ if operation == "/":
      if num2 != 0: # To handle division by zero
         result = num1 / num2
      else:
