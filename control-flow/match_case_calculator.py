@@ -23,16 +23,16 @@ while True:
  operator = input("Choose the operation (+, -, *, /):")
 
  match operator:
-    case "+":
+    case _ if operator == "+":
      result = num1 + num2
 
-    case "-":
+    case _ if operator == "-":
      result = num1 - num2
 
-    case "*":
+    case _ if operator == "*":
      result = num1 * num2
      
-    case "/":
+    case _ if operator == "/":
      if num2 != 0: # To handle division by zero
         result = num1 / num2
      else:
