@@ -19,7 +19,7 @@ Print the clothing recommendation based on the weather condition provided by the
 # define possible inputs.
 #weather = ("sunny", "rainy", "cold")
 while True:
-    weather = input("What is the weather like today? (sunny/rainy/cold): ").lower()  # Store the input in 'weather'
+    weather = input("What's the weather like today? (sunny/rainy/cold):").lower()  # Store the input in 'weather'
 
     if weather == "sunny":
         print("Wear a t-shirt and sunglasses.")  # Print this if the weather is sunny
