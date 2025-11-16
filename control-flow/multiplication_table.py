@@ -14,21 +14,14 @@ Print each line of the multiplication table in the format: “X * Y = Z”, wher
 Y is the current number in the loop, and Z is the product.
 """
 
-start = 1
-end = 10
+range(1, 11) # define the range
 
+number = int(input("Enter a number to see its multiplication table:")) # asks user to input number
 
-number = int(input("Enter a number to see its multiplication table:"))
+print(f"The multiples of {number} from 1 to 10:") 
 
-#print(f"The multiples of {number} from {start} to {end}:")
-
-print(f"The multiples of {number} from {start, end}:")
-
-for i in range(1, 11):
+for i in range(1, 11): # for number in range
    result = number * i
-   print(f"{number} * {i} = {result}")
+   print(f"{number} * {i} = {result}") # print the number multiplied by the range = result
 
-
-# for i in range(start, end + 1):
-   # print(number * i)
 
