@@ -19,10 +19,20 @@ After completing each row, print a newline character to move to the next row.
 Continue until the pattern forms a square of the inputted size.
 """
 
-size = int(input("Enter the size of te pattern:"))
+size = int(input("Enter the size of the pattern: "))
 
-stars = size
 row = 1
 
-while True:
-    if row <= size
+while row <= size:
+    for column in range(size):
+        print("*", end="")
+    print()
+
+    row += 1
+
+
+
+
+    
+        
+
