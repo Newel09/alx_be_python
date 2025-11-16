@@ -24,10 +24,10 @@ Priority
 task = input("Enter your task: ")
 
 # Prompt for the task's priority
-priority = input("Enter the priority level (high, medium, low): ").lower()
+priority = input("Priority (high/medium/low): ").lower()
 
 # Ask if the task is time-bound
-time_bound = input("Is the task time-bound? (yes or no): ").lower()
+time_bound = input("Is it time-bound? (yes/no): ").lower()
 
 # Use Match Case statement to react based on priority
 match priority:
