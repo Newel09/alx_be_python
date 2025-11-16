@@ -24,7 +24,7 @@ number = int(input("Enter a number to see its multiplication table:"))
 
 print(f"The multiples of {number} from {start, end}:")
 
-for i in range(start, end + 1):
+for i in range(1, 11):
    result = number * i
    print(f"{number} * {i} = {result}")
 
