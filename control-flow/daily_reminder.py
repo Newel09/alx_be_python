@@ -16,25 +16,28 @@ Within the Match Case or after, use an if statement to modify the reminder if th
 
 """
 Reminder: 'Finish project report' is a high priority task that requires immediate attention today!
+Task
+Time Bound
+Priority
 """
-task = str(input("Enter your task: "))
+Task = str(input("Enter your task: "))
 
-task_priority = str(input("Priority (high, medium, low): ").lower())
+Priority = str(input("Priority (high, medium, low): ").lower())
 
-time = str(input("Is the task time-bound (yes or no)? ").lower())
+Time_Bound = str(input("Is the task time-bound (yes or no)? ").lower())
 
-match (task_priority, time):
+match (Priority, Time_Bound):
     case ("high", "yes"):
-        print(f"Reminder: '{task}' is a {task_priority} priority task that requires immediate attention today!")
+        print(f"Reminder: '{Task}' is a {Priority} priority task that requires immediate attention today!")
     case ("high", "no"):
-        print(f"Reminder: '{task}' is a {task_priority} priority task but can be done tomorrow.")
+        print(f"Reminder: '{Task}' is a {Priority} priority task but can be done tomorrow.")
     case ("medium", "yes"):
-        print(f"Reminder: '{task}' is a {task_priority} priority task but needs time attention.")
+        print(f"Reminder: '{Task}' is a {Priority} priority task but needs time attention.")
     case ("medium", "no"):
-        print(f"Reminder: '{task}' is a {task_priority} priority task and does not need immediate attention.")
+        print(f"Reminder: '{Task}' is a {Priority} priority task and does not need immediate attention.")
     case ("low", "yes"):
-        print(f"Reminder: '{task}' is a {task_priority} priority task. Consider working on it soon.")
+        print(f"Reminder: '{Task}' is a {Priority} priority task. Consider working on it soon.")
     case ("low", "no"):
-        print(f"Reminder: '{task}' is a {task_priority} priority task. Consider completing it when you have free time.")
+        print(f"Reminder: '{Task}' is a {Priority} priority task. Consider completing it when you have free time.")
     case _:
          print("Invalid!")
