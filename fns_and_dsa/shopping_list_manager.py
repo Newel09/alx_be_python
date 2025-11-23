@@ -14,13 +14,15 @@ def main():
 
         if choice == '1':
             print("Enter the item to add:")
-            item = input()
-            shopping_list.append(item.capitalize())
+            # Trim whitespace then capitalize the item before storing
+            item = input().strip().capitalize()
+            shopping_list.append(item)
         elif choice == '2':
             print("Enter the item to remove:")
-            item = input()
-            if item.capitalize() in shopping_list:
-                shopping_list.remove(item.capitalize())
+            # Trim and capitalize the removal input to match stored format
+            item = input().strip().capitalize()
+            if item in shopping_list:
+                shopping_list.remove(item)
             else:
                 print("Item not found in the list.")
         elif choice == '3':
