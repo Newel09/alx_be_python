@@ -22,7 +22,7 @@ while True:                                     # Main loop for user interaction
             fahrenheit = convert_to_fahrenheit(celsius)
             print(f"{celsius} °C is {fahrenheit:.2f} °F\n")
         except ValueError:
-            print("Please enter a valid number for Celsius temperature.\n")
+            print("Invalid temperature. Please enter a numeric value.\n")
     elif user_choice == '2':
         fahrenheit_input = input("Enter temperature in Fahrenheit: ")
         try:
@@ -30,7 +30,7 @@ while True:                                     # Main loop for user interaction
             celsius = convert_to_celsius(fahrenheit)
             print(f"{fahrenheit} °F is {celsius:.2f} °C\n")
         except ValueError:
-            print("Please enter a valid number for Fahrenheit temperature.\n")
+            print("Invalid temperature. Please enter a numeric value.\n")
     elif user_choice == '3':
         print("Exiting the Temperature Conversion Tool. Goodbye!")
         break
