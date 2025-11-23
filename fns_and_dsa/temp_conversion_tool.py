@@ -20,7 +20,7 @@ while True:                                     # Main loop for user interaction
         try:
             celsius = float(celsius_input)
             fahrenheit = convert_to_fahrenheit(celsius)
-            print(f"{celsius} C is {fahrenheit:.2f} F\n")
+            print(f"{celsius} °C is {fahrenheit:.2f} °F\n")
         except ValueError:
             print("Please enter a valid number for Celsius temperature.\n")
     elif user_choice == '2':
@@ -28,7 +28,7 @@ while True:                                     # Main loop for user interaction
         try:
             fahrenheit = float(fahrenheit_input)
             celsius = convert_to_celsius(fahrenheit)
-            print(f"{fahrenheit} F is {celsius:.2f} C\n")
+            print(f"{fahrenheit} °F is {celsius:.2f} °C\n")
         except ValueError:
             print("Please enter a valid number for Fahrenheit temperature.\n")
     elif user_choice == '3':
