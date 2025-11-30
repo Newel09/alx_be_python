@@ -24,6 +24,13 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(0, 5), 0)
         self.assertAlmostEqual(self.calc.multiply(2.5, 2), 5.0)
 
+    def test_division(self):
+        # General division tests including integer division
+        self.assertEqual(self.calc.divide(9, 3), 3)
+        self.assertAlmostEqual(self.calc.divide(8, 4), 2.0)
+        # Division by zero should return None
+        self.assertIsNone(self.calc.divide(1, 0))
+
     def test_division_normal(self):
         self.assertEqual(self.calc.divide(10, 2), 5)
         self.assertAlmostEqual(self.calc.divide(7, 2), 3.5)
