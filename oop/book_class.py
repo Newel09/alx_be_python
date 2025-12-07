@@ -16,9 +16,9 @@ class Book:
 		# Called when the object is about to be destroyed
 		print(f"Deleting {self.title}")
 
-	def __str__(self) -> str:
+	def __str__(self):
 		return f"{self.title} by {self.author}, published in {self.year}"
 
-	def __repr__(self) -> str:
+	def __repr__(self):
 		return f"Book('{self.title}', '{self.author}', {self.year})"
 
